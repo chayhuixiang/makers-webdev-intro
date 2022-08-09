@@ -1,0 +1,43 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: darkturquoise;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+main {
+  width: 400px;
+  background-color: white;
+  padding: 0 1rem;
+  box-shadow: 10px 10px;
+}
+
+main * {
+  font-family: 'Raleway', sans-serif;
+}
+
+input, textarea {
+  display:block;
+  width:100%;
+  padding:.2em;
+  margin: .2em 0 .6em;
+  font-size:1.2em;
+  border: 2px solid black;
+}
+
+input[type=submit]{
+  background: salmon;
+  border:none;
+  margin:1em 0;
+  color:white;
+  padding:1em;
+  cursor: pointer;
+}
