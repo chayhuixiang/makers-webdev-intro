@@ -2,7 +2,7 @@ const sendPostReq = async () => {
   const formElement = document.querySelector("form");
   const formData = new FormData(formElement);
   const dataToSend = Object.fromEntries(formData);
-  let response = await fetch('http://localhost:3000', {
+  let response = await fetch('https://Makers-Webdev-Intro.chayhuixiang.repl.co', {
     method: 'POST',
     body: JSON.stringify(dataToSend),
     headers: {

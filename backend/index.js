@@ -1,6 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const app = express();
+require("dotenv").config();
 const port = 3000;
 
 let bodyParser = require("body-parser");
@@ -10,9 +11,9 @@ app.use(bodyParser.urlencoded({
 app.use(bodyParser.json());
 app.use(cors({origin: '*'}));
 
-const { initializeApp, applicationDefault, cert } = require('firebase-admin/app');
+const { initializeApp, cert } = require('firebase-admin/app');
 const { getFirestore, Timestamp, FieldValue } = require('firebase-admin/firestore');
-const serviceAccount = require("./secret/makers-webdev-intro-04411c9f5353.json");
+const serviceAccount = JSON.parse(Buffer.from(process.env.SERVICEACCOUNT, "base64"));
 
 initializeApp({
   credential: cert(serviceAccount)
