@@ -16,6 +16,7 @@ function App() {
     let result = await response.text();
     alert(result);
   }
+  
   return (
     <main>
       <h1>Attendance Form</h1>
