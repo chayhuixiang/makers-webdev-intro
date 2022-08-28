@@ -1,0 +1,25 @@
+main {
+  width: 400px;
+  background-color: white;
+  padding: 0 1rem;
+  box-shadow: 10px 10px;
+  overflow: auto;
+}
+
+input, textarea {
+  display:block;
+  width:100%;
+  padding:.2em;
+  margin: .2em 0 .6em;
+  font-size:1.2em;
+  border: 2px solid black;
+}
+
+input[type=submit]{
+  background: salmon;
+  border:none;
+  margin:1em 0;
+  color:white;
+  padding:1em;
+  cursor: pointer;
+}
