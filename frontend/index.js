@@ -17,6 +17,7 @@ function validateForm() {
   if (validateInput("name") && validateInput("email")) {
     sendPostReq();
   }
+  return false;
 }
 
 function validateInput(fieldName) {
